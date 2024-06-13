@@ -1,48 +1,13 @@
-<a href="https://assetstore.unity.com/packages/tools/localization/koreantyper-232949"><img src="https://github.com/KimYC1223/KoreanTyper/blob/main/DocImage/assetstore.png?raw=true" alt="Asset Store Guide" width="100%"></a>
-
-![logo Image](https://github.com/KimYC1223/KoreanTyper/blob/main/DocImage/Title.png?raw=true)
-
-# Korean Typer
-
-C# string class 키보드 한글 입력 효과 Extension
-
-![](https://img.shields.io/github/stars/KimYC1223/KoreanTyper)  ![](https://img.shields.io/github/forks/KimYC1223/KoreanTyper) ![](https://img.shields.io/github/issues/KimYC1223/KoreanTyper) 
+# Typing Effect in various langauges for Unity
+Originally forked from [Extens223/KoreanTyper](https://github.com/Extens223/KoreanTyper)
 
 ---
 
-## 1. 소개
-
-![Demo GIF](https://github.com/KimYC1223/KoreanTyper/blob/main/DocImage/KoreanTyperGif.gif?raw=true)
-
-한글은 알파벳이나 한자와는 다르게 초성, 중성, 종성으로 이루어진 음절 단위를 사용합니다.
-
-또한, string class의 가장 작은 기본 단위는 음절이기 때문에,
-
-string의 각 원소를 하나씩 출력하게 된다면 한 음절씩 나타나는 모습을 볼 수 있습니다.
-
-이 패키지는 그러한 문제를 해결하기 위해
+## Info
 
 주어진 string 입력을 **마치 실제 키보드로 입력하는 것 처럼 보이는 효과를 주는** string class Extension입니다.
 
-이 에셋을 사용하여 Unity 엔진에서 사람이 문자열을 직접 타이핑 하는 듯 한 느낌을
-
-스크립트로 쉽게 구현 할 수 있습니다.
-
-| 플랫폼 |                             버전                             |
-| :----: | :----------------------------------------------------------: |
-| Unity  | <img src="https://img.shields.io/badge/Version-2017.1.0f3 ↑-orange" align="left"> |
-
-<br>
-
-<a href="https://github.com/KimYC1223/KoreanTyper/blob/main/LICENSE"><img src="https://img.shields.io/github/license/KimYC1223/KoreanTyper"></a> <a href="mailto:kau_esc@naver.com"><img src="https://img.shields.io/badge/Contact-kau_esc@naver.com-blue?logo=gmail&logoColor=white"></a> <a href="https://KimYC1223.github.io/"><img src="https://img.shields.io/badge/blog-GitBlog-red?logo=github&logoColor=white"></a>
-
-<br>
-
----
-
-<br>
-
-## 2. 사용법
+## Usage
 
 **KoreanTyper**는 아주 간단하게 사용 할 수 있습니다.
 
@@ -67,7 +32,7 @@ Debug.Log("안녕하세요".Typing(7));		// 출력 결과 : 안녕ㅎ
 
 <br>
 
-## 3. 더 자세한 사용법
+## Detailed Usage
 
 **KoreanTyper**는 다음 3가지의 ```string Class Extension```을 제공합니다: 
 
@@ -83,7 +48,7 @@ Debug.Log("안녕하세요".Typing(7));		// 출력 결과 : 안녕ㅎ
 
 <br>
 
-### 3.1 ```public int GetTypingLength()```
+### ```public int GetTypingLength()```
 
 해당 문장이 총 몇번의 타이핑으로 입력 할 수 있는지 반환하는 함수입니다.
 
@@ -110,7 +75,7 @@ Debug.Log("동해물과 백두산이".GetTypingLength());		// 출력 결과 : 22
 
 <br>
 
-### 3.2 ```public string Typing(int count)```
+### ```public string Typing(int count)```
 
 ```count```횟수 만큼 키보드를 눌렀을 때, 해당 문자가 어디까지 입력되는지 계산하고 이를 반환하는 함수입니다.
 
@@ -153,7 +118,7 @@ Debug.Log("안녕하세요".Typing(9));		// 출력 결과 : 안녕하ㅅ
 
 <br>
 
-### 3.3 ```public string Typing(float percent)```
+### ```public string Typing(float percent)```
 
 몇 번에 걸쳐 진행 될 지 모르겠다면, 그냥  0~1 사이의 진행률로 입력해도 됩니다.
 
@@ -173,7 +138,7 @@ Debug.Log("안녕하세요".Typing(0.845f));		// 출력 결과 : 안녕하세
 
 <br>
 
-## 4. 간단한 데모
+## Simple Demo
 
 본 코드는 ```Text``` UI에 문자열을 타이핑하는 효과를 주는 아주 간단한 예제입니다.
 
